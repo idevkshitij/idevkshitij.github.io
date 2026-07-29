@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="5" y="5" width="80" height="80" fill="#ffde59" stroke="black" stroke-width="8"/>
+  <text x="45" y="65" font-family="'Courier New', Courier, monospace" font-weight="900" font-size="55" text-anchor="middle" fill="black">K</text>
+</svg>
