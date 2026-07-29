@@ -83,7 +83,7 @@ function App() {
           </div>
           <h1>Kshitij<br/>Shrivastava</h1>
           <p>
-            <span style={{ fontSize: '3rem', fontWeight: '700', lineHeight: '0.8', float: 'left', marginRight: '0.5rem', marginTop: '0.3rem', color: '#0A66C2' }}>5+</span> 
+            <span className="drop-cap">5+</span> 
             years of experience developing and shipping high-availability cloud-native systems, microservices architectures, and dynamic frontend experiences. I specialize in building full-stack applications that power millions of users and drive engineering excellence.
           </p>
           <div className="hero-actions">
@@ -311,9 +311,9 @@ function App() {
 
       {/* GitHub Work Section */}
       <section className="container section-wrapper">
-        <div className="title-wrapper" style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%', marginBottom: '1.5rem' }}>
+        <div className="title-wrapper github-title-wrapper">
           <h2 className="section-title" style={{ marginBottom: 0 }}>GitHub Repositories</h2>
-          <span style={{ fontFamily: 'monospace', fontSize: '1.1rem', fontWeight: 'bold', border: '2px solid #000', padding: '0.25rem 0.5rem', backgroundColor: '#fff', boxShadow: '3px 3px 0px 0px var(--c-pink)' }}>
+          <span className="github-tag">
             @idevkshitij
           </span>
         </div>

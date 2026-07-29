@@ -84,6 +84,17 @@ section { padding-top: 8rem; }
 .hero-image-wrapper:hover img { filter: grayscale(0%); }
 .hero-username { font-family: 'Courier New', Courier, monospace; font-weight: 700; font-size: 1.2rem; background-color: #000; color: var(--c-green); padding: 0.25rem 0.75rem; border: 2px solid #000; box-shadow: 4px 4px 0px 0px var(--c-pink); }
 
+.drop-cap {
+  font-size: 3rem; font-weight: 700; line-height: 0.8; float: left; margin-right: 0.5rem; margin-top: 0.3rem; color: #0A66C2;
+}
+
+.github-title-wrapper {
+  flex-direction: row; justify-content: space-between; align-items: flex-end; width: 100%; margin-bottom: 1.5rem;
+}
+.github-tag {
+  font-family: monospace; font-size: 1.1rem; font-weight: bold; border: 2px solid #000; padding: 0.25rem 0.5rem; background-color: #fff; box-shadow: 3px 3px 0px 0px var(--c-pink);
+}
+
 /* Skills Sponsor Marquee */
 .skills-banner {
   background-color: var(--c-blue); color: #000; padding: 2rem 0; border-top: var(--border-thick); border-bottom: var(--border-thick);
@@ -232,11 +243,22 @@ section { padding-top: 8rem; }
 }
 
 @media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .hero-content h1 { font-size: 2.5rem; }
+  .hero-content p { font-size: 1.1rem; padding: 1rem; }
+  .drop-cap { font-size: 2.2rem; }
   .hero-actions .btn { width: 100%; justify-content: center; }
+  
+  .section-title { font-size: 1.6rem; padding: 0.5rem; }
+  .github-title-wrapper { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .github-tag { font-size: 0.95rem; }
+  
   .metric-value { font-size: 2rem; }
   .skills-track span { font-size: 1.25rem; }
   .skills-track svg { width: 40px; height: 40px; }
   .upi-badge { font-size: 1.1rem; padding: 1rem; }
+  .bot-mascot { width: 50px; height: 50px; bottom: 90%; }
+  
   .modal-action-buttons { flex-direction: column; }
   /* hide tooltips on tiny screens to prevent overlap */
   .has-tooltip::after { display: none; }
