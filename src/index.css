@@ -243,7 +243,7 @@ section { padding-top: 8rem; }
 }
 
 @media (max-width: 480px) {
-  .hero { padding-top: 6rem; }
+  .hero { padding-top: 8rem !important; }
   .container { padding: 0 1rem; }
   .hero-content h1 { font-size: 2.5rem; }
   .hero-content p { font-size: 1.1rem; padding: 1rem; }
