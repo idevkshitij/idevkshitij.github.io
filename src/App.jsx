@@ -102,7 +102,7 @@ function App() {
           <div className="hero-image-wrapper">
             <img src="/profile.png" alt="Kshitij Shrivastava" data-tooltip="Kshitij Shrivastava" className="has-tooltip" />
           </div>
-          <div className="hero-username" data-tooltip="Username">&lt;/idevkshitij&gt;</div>
+          <div className="hero-username" data-tooltip="Github Username">&lt;/idevkshitij&gt;</div>
         </div>
       </section>
 
