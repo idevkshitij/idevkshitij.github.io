@@ -368,7 +368,7 @@ function App() {
             <p>AI matchmaking service for finding the right cars.</p>
             <div className="tech-tags">
               <span className="tag">JavaScript</span>
-              <span className="tag">Python</span>
+              <span className="tag">Spring AI</span>
               <span className="tag">LLMs</span>
               <span className="tag">React</span>
             </div>
@@ -408,8 +408,8 @@ function App() {
             style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}
           >
             {isCopied ? (
-              <span style={{ color: 'black', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
-                <Check size={20} color="green" /> Yay! Cheers! UPI copied 😇
+              <span style={{ color: 'black', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold', fontSize: '1rem' }}>
+                <Check size={20} color="green" style={{ flexShrink: 0 }} /> <span>Yay! Cheers! UPI copied 😇</span>
               </span>
             ) : (
               <>
