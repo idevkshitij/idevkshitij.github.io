@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Mail, Play, Pause, Coffee, MapPin, RadioTower, Server, Cog, BrainCircuit, Activity, ExternalLink, Copy, Check } from 'lucide-react';
-import { FaJava, FaReact, FaAws, FaDocker, FaGithub, FaLinkedin, FaNodeJs, FaPython, FaRobot, FaEnvelope } from 'react-icons/fa';
-import { SiSpringboot, SiKubernetes, SiApachekafka, SiRedis, SiJenkins, SiLinux, SiMysql } from 'react-icons/si';
+import { FaJava, FaReact, FaAws, FaDocker, FaGithub, FaLinkedin, FaNodeJs, FaPython, FaRobot, FaEnvelope, FaAward } from 'react-icons/fa';
+import { SiSpringboot, SiKubernetes, SiApachekafka, SiRedis, SiJenkins, SiLinux, SiMysql, SiDatabricks } from 'react-icons/si';
 import './index.css';
 
 function App() {
@@ -220,7 +220,8 @@ function App() {
           <h2 className="section-title">Professional Work</h2>
         </div>
         
-        <div className="project-card">
+        <div className="brutal-container">
+          <div className="project-card">
           <RadioTower className="watermark" style={{opacity: 0.05, width: '300px', height: '300px', left: '-50px', top: '-50px'}} />
           <div className="project-header">
             <h3>Policy Control Function (PCF)</h3>
@@ -300,6 +301,7 @@ function App() {
             <span className="tag">AWS</span>
           </div>
         </div>
+        </div>
         
         {/* Section Context Link */}
         <div style={{marginTop: '2rem', textAlign: 'right'}}>
@@ -309,11 +311,47 @@ function App() {
         </div>
       </section>
 
+      {/* Certifications Section */}
+      <section className="container section-wrapper">
+        <div className="title-wrapper" style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%' }}>
+          <h2 className="section-title">Certifications</h2>
+          <span className="github-tag" style={{ backgroundColor: '#fff', fontSize: '1rem', boxShadow: '3px 3px 0px 0px var(--c-pink)', marginBottom: '0.4rem' }}>
+            Verified on LinkedIn
+          </span>
+        </div>
+        <div className="domain-grid">
+          <a href="https://www.coursera.org/account/accomplishments/verify/LF13XVQ9T8FT" target="_blank" rel="noopener noreferrer" className="brutal-card card-blue" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', padding: '0', overflow: 'hidden' }}>
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LF13XVQ9T8FT/CERTIFICATE_LANDING_PAGE~LF13XVQ9T8FT.jpeg" alt="Java Microservices Certificate" style={{ width: '100%', height: 'auto', borderBottom: '3px solid #000' }} />
+            <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>Building Scalable Java Microservices with Spring Boot and Spring Cloud</h3>
+              <p>Issued by: Google Cloud</p>
+              <div style={{ marginTop: 'auto', paddingTop: '1rem', fontWeight: 'bold', textDecoration: 'underline' }}>View Credential ↗</div>
+            </div>
+          </a>
+          <a href="https://www.coursera.org/account/accomplishments/verify/1LO6VHPNMRXU" target="_blank" rel="noopener noreferrer" className="brutal-card card-yellow" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', padding: '0', overflow: 'hidden' }}>
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~1LO6VHPNMRXU/CERTIFICATE_LANDING_PAGE~1LO6VHPNMRXU.jpeg" alt="AWS Cloud Technical Essentials Certificate" style={{ width: '100%', height: 'auto', borderBottom: '3px solid #000' }} />
+            <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>AWS Cloud Technical Essentials</h3>
+              <p>Issued by: Amazon Web Services</p>
+              <div style={{ marginTop: 'auto', paddingTop: '1rem', fontWeight: 'bold', textDecoration: 'underline' }}>View Credential ↗</div>
+            </div>
+          </a>
+          <a href="https://credentials.databricks.com/profile/kshitijshrivastava357617/wallet" target="_blank" rel="noopener noreferrer" className="brutal-card card-pink" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', padding: '0', overflow: 'hidden' }}>
+            <img src="https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=shaobivx&variant=medium" alt="Databricks AI Agent Certificate" style={{ width: '100%', height: 'auto', borderBottom: '3px solid #000' }} />
+            <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>AI Agent Fundamentals</h3>
+              <p>Issued by: Databricks Academy</p>
+              <div style={{ marginTop: 'auto', paddingTop: '1rem', fontWeight: 'bold', textDecoration: 'underline' }}>View Credential ↗</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
       {/* GitHub Work Section */}
       <section className="container section-wrapper">
-        <div className="title-wrapper github-title-wrapper">
+        <div className="title-wrapper" style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%' }}>
           <h2 className="section-title" style={{ marginBottom: 0 }}>GitHub Repositories</h2>
-          <span className="github-tag">
+          <span className="github-tag" style={{ backgroundColor: 'var(--c-pink)', marginBottom: '0' }}>
             @idevkshitij
           </span>
         </div>
@@ -468,6 +506,9 @@ function App() {
           <p style={{ fontWeight: '600' }}>
             Have a good day visitor! 😊
           </p>
+          <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
+            <img src="https://komarev.com/ghpvc/?username=idevkshitij&label=VISITS&color=FF90E8&style=for-the-badge" alt="Hits" style={{ border: '3px solid #000', boxShadow: '4px 4px 0px 0px #000' }} />
+          </div>
           <p style={{ marginTop: '1rem', color: '#999', fontSize: '0.9rem' }}>
             &copy; {new Date().getFullYear()} Kshitij Shrivastava | Cooked using creativity, code, skills and patience.
           </p>

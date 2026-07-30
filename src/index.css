@@ -35,7 +35,7 @@ section { padding-top: 8rem; }
   border-bottom: none; box-shadow: 8px 0px 0px 0px #000; 
 }
 .title-wrapper { margin-bottom: 0; display: flex; flex-direction: column; align-items: flex-start; }
-.title-wrapper + .domain-grid, .title-wrapper + .project-card, .title-wrapper + .github-grid { margin-top: 0; }
+.title-wrapper + .domain-grid, .title-wrapper + .project-card, .title-wrapper + .github-grid, .title-wrapper + .brutal-container { margin-top: 0; }
 
 .section-context-link {
   font-weight: 700; font-size: 1.1rem; text-decoration: underline; text-decoration-thickness: 3px;
@@ -88,9 +88,7 @@ section { padding-top: 8rem; }
   font-size: 3rem; font-weight: 700; line-height: 0.8; float: left; margin-right: 0.5rem; margin-top: 0.3rem; color: #0A66C2;
 }
 
-.github-title-wrapper {
-  flex-direction: row; justify-content: space-between; align-items: flex-end; width: 100%; margin-bottom: 1.5rem;
-}
+
 .github-tag {
   font-family: monospace; font-size: 1.1rem; font-weight: bold; border: 2px solid #000; padding: 0.25rem 0.5rem; background-color: #fff; box-shadow: 3px 3px 0px 0px var(--c-pink);
 }
@@ -111,10 +109,15 @@ section { padding-top: 8rem; }
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem;
   border: var(--border-thick); background-color: var(--bg-main); padding: 2rem; box-shadow: var(--shadow-hard);
 }
+.brutal-container {
+  display: flex; flex-direction: column; gap: 2rem;
+  border: var(--border-thick); background-color: var(--bg-main); padding: 2rem; box-shadow: var(--shadow-hard);
+}
 .brutal-card {
   border: var(--border-thick); box-shadow: 6px 6px 0px 0px #000; padding: 2.5rem; transition: all 0.1s ease-in-out;
   display: flex; flex-direction: column; position: relative; overflow: hidden;
 }
+.brutal-container .project-card { margin-bottom: 0; box-shadow: 6px 6px 0px 0px #000; }
 .watermark { position: absolute; left: -20px; bottom: -20px; width: 150px; height: 150px; opacity: 0.1; pointer-events: none; color: #000; z-index: 0; }
 .brutal-card > * { position: relative; z-index: 1; }
 .brutal-card:hover { transform: translate(2px, 2px); box-shadow: 4px 4px 0px 0px #000; }
@@ -141,9 +144,8 @@ section { padding-top: 8rem; }
 /* Professional Work */
 .project-card {
   background-color: #fff; border: var(--border-thick); box-shadow: var(--shadow-hard);
-  padding: 3rem; border-top: none; position: relative; overflow: hidden;
+  padding: 3rem; position: relative; overflow: hidden;
 }
-.project-card + .project-card { border-top: var(--border-thick); margin-top: 3rem; }
 .project-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 3px solid #000; padding-bottom: 1rem; }
 .project-header h3 { font-size: 2.2rem; text-transform: uppercase; }
 .project-date { font-size: 1rem; font-weight: 700; background-color: #000; color: #fff; padding: 0.25rem 0.75rem; }
@@ -227,6 +229,7 @@ section { padding-top: 8rem; }
   .project-card { padding: 1.5rem; }
   
   .domain-grid { grid-template-columns: 1fr; padding: 1rem; gap: 1.5rem; }
+  .brutal-container { padding: 1rem; gap: 1.5rem; }
   .github-grid { padding: 1rem; gap: 1.5rem; }
   .brutal-card { padding: 1.5rem; }
   
@@ -251,7 +254,7 @@ section { padding-top: 8rem; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   
   .section-title { font-size: 1.6rem; padding: 0.5rem; }
-  .github-title-wrapper { flex-direction: column; align-items: flex-start; gap: 1rem; }
+
   .github-tag { font-size: 0.95rem; }
   
   .metric-value { font-size: 2rem; }
