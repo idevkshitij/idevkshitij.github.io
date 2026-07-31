@@ -321,7 +321,7 @@ function App() {
         </div>
         <div className="domain-grid">
           <a href="https://www.coursera.org/account/accomplishments/verify/LF13XVQ9T8FT" target="_blank" rel="noopener noreferrer" className="brutal-card card-blue" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', padding: '0', overflow: 'hidden' }}>
-            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LF13XVQ9T8FT/CERTIFICATE_LANDING_PAGE~LF13XVQ9T8FT.jpeg" alt="Java Microservices Certificate" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover', borderBottom: '3px solid #000' }} />
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LF13XVQ9T8FT/CERTIFICATE_LANDING_PAGE~LF13XVQ9T8FT.jpeg" alt="Java Microservices Certificate" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'contain', backgroundColor: '#fff', borderBottom: '3px solid #000' }} />
             <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>Building Scalable Java Microservices with Spring Boot and Spring Cloud</h3>
               <p>Issued by: Google Cloud</p>
@@ -329,7 +329,7 @@ function App() {
             </div>
           </a>
           <a href="https://www.coursera.org/account/accomplishments/verify/1LO6VHPNMRXU" target="_blank" rel="noopener noreferrer" className="brutal-card card-yellow" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', padding: '0', overflow: 'hidden' }}>
-            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~1LO6VHPNMRXU/CERTIFICATE_LANDING_PAGE~1LO6VHPNMRXU.jpeg" alt="AWS Cloud Technical Essentials Certificate" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover', borderBottom: '3px solid #000' }} />
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~1LO6VHPNMRXU/CERTIFICATE_LANDING_PAGE~1LO6VHPNMRXU.jpeg" alt="AWS Cloud Technical Essentials Certificate" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'contain', backgroundColor: '#fff', borderBottom: '3px solid #000' }} />
             <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>AWS Cloud Technical Essentials</h3>
               <p>Issued by: Amazon Web Services</p>
@@ -337,7 +337,7 @@ function App() {
             </div>
           </a>
           <a href="https://credentials.databricks.com/profile/kshitijshrivastava357617/wallet" target="_blank" rel="noopener noreferrer" className="brutal-card card-pink" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', padding: '0', overflow: 'hidden' }}>
-            <img src="https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=shaobivx&variant=medium" alt="Databricks AI Agent Certificate" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover', objectPosition: 'top', borderBottom: '3px solid #000' }} />
+            <img src="https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=shaobivx&variant=medium" alt="Databricks AI Agent Certificate" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'contain', backgroundColor: '#fff', borderBottom: '3px solid #000' }} />
             <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
               <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>AI Agent Fundamentals</h3>
               <p>Issued by: Databricks Academy</p>
@@ -507,7 +507,7 @@ function App() {
             Have a good day visitor! 😊
           </p>
           <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <img src="https://komarev.com/ghpvc/?username=idevkshitij&label=VISITS&color=FF90E8&style=for-the-badge" alt="Hits" style={{ border: '3px solid #000', boxShadow: '4px 4px 0px 0px #000' }} />
+            <img src="https://komarev.com/ghpvc/?username=idevkshitij&label=VISITOR%20COUNT&color=006400&style=for-the-badge" alt="Hits" style={{ border: '3px solid #000', boxShadow: '4px 4px 0px 0px #000' }} />
           </div>
           <p style={{ marginTop: '1rem', color: '#999', fontSize: '0.9rem' }}>
             &copy; {new Date().getFullYear()} Kshitij Shrivastava | Cooked using creativity, code, skills and patience.
