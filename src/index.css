@@ -253,9 +253,9 @@ section { padding-top: 8rem; }
   .drop-cap { font-size: 2.2rem; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   
-  .section-title { font-size: 1.6rem; padding: 0.5rem; }
+  .section-title { font-size: 1.25rem; padding: 0.35rem 0.5rem; }
 
-  .github-tag { font-size: 0.95rem; }
+  .github-tag { font-size: 0.65rem; padding: 0.2rem 0.4rem; white-space: nowrap; }
   
   .metric-value { font-size: 2rem; }
   .skills-track span { font-size: 1.25rem; }

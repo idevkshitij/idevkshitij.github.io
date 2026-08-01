@@ -8,7 +8,42 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
+  const [visitorCount, setVisitorCount] = useState(null);
   const audioRef = useRef(null);
+
+    useEffect(() => {
+      const hasVisited = localStorage.getItem('hasVisited_idevkshitij');
+      const lastKnownCount = localStorage.getItem('lastVisitorCount_idevkshitij');
+
+      if (!hasVisited) {
+        fetch('https://api.counterapi.dev/v1/idevkshitij/portfolio/up')
+          .then(res => res.json())
+          .then(data => {
+            if (data.count !== undefined) {
+              setVisitorCount(data.count);
+              localStorage.setItem('hasVisited_idevkshitij', 'true');
+              localStorage.setItem('lastVisitorCount_idevkshitij', data.count.toString());
+            }
+          })
+          .catch(e => {
+            console.error(e);
+            setVisitorCount(lastKnownCount ? lastKnownCount : '1');
+          });
+      } else {
+        fetch('https://api.counterapi.dev/v1/idevkshitij/portfolio')
+          .then(res => res.json())
+          .then(data => {
+            if (data.count !== undefined) {
+              setVisitorCount(data.count);
+              localStorage.setItem('lastVisitorCount_idevkshitij', data.count.toString());
+            }
+          })
+          .catch(e => {
+            console.error(e);
+            setVisitorCount(lastKnownCount ? lastKnownCount : '1');
+          });
+      }
+    }, []);
 
   const handleCopyUpi = () => {
     navigator.clipboard.writeText("8717847853");
@@ -313,7 +348,7 @@ function App() {
 
       {/* Certifications Section */}
       <section className="container section-wrapper">
-        <div className="title-wrapper" style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%', gap: '1rem' }}>
+        <div className="title-wrapper" style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%' }}>
           <h2 className="section-title">Certifications</h2>
           <span className="github-tag" style={{ backgroundColor: '#fff', boxShadow: '3px 3px 0px 0px var(--c-pink)', marginBottom: '0.4rem' }}>
             Verified on LinkedIn
@@ -349,7 +384,7 @@ function App() {
 
       {/* GitHub Work Section */}
       <section className="container section-wrapper">
-        <div className="title-wrapper" style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%', gap: '1rem' }}>
+        <div className="title-wrapper" style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%' }}>
           <h2 className="section-title" style={{ marginBottom: 0 }}>GitHub Repositories</h2>
           <span className="github-tag" style={{ backgroundColor: 'var(--c-pink)', marginBottom: '0' }}>
             @idevkshitij
@@ -507,7 +542,14 @@ function App() {
             Have a good day visitor! 😊
           </p>
           <div style={{ marginTop: '1.5rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <img src="https://komarev.com/ghpvc/?username=idevkshitij&label=VISITOR%20COUNT&color=006400&style=for-the-badge" alt="Hits" style={{ border: '3px solid #000', boxShadow: '4px 4px 0px 0px #000' }} />
+            <div style={{ display: 'inline-flex', border: '3px solid #000', boxShadow: '4px 4px 0px 0px #000', overflow: 'hidden', fontWeight: 'bold' }}>
+              <div style={{ backgroundColor: '#555', color: '#fff', padding: '0.4rem 0.6rem', fontSize: '0.85rem', letterSpacing: '1px' }}>
+                VISITOR COUNT
+              </div>
+              <div style={{ backgroundColor: '#006400', color: '#fff', padding: '0.4rem 0.6rem', fontSize: '0.85rem', borderLeft: '3px solid #000' }}>
+                {visitorCount !== null ? visitorCount : '...'}
+              </div>
+            </div>
           </div>
           <p style={{ marginTop: '1rem', color: '#999', fontSize: '0.9rem' }}>
             &copy; {new Date().getFullYear()} Kshitij Shrivastava | Cooked using creativity, code, skills and patience.
