@@ -386,7 +386,7 @@ function App() {
       <section className="container section-wrapper">
         <div className="title-wrapper" style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%' }}>
           <h2 className="section-title" style={{ marginBottom: 0 }}>GitHub Repositories</h2>
-          <span className="github-tag" style={{ backgroundColor: 'var(--c-pink)', marginBottom: '0' }}>
+          <span className="github-tag" style={{ backgroundColor: '#fff', boxShadow: '3px 3px 0px 0px var(--c-pink)', marginBottom: '0.4rem' }}>
             @idevkshitij
           </span>
         </div>
